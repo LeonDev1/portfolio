@@ -12,7 +12,7 @@
 .bg-image {
   position: absolute;
   width: 100vw;
-  height: 80vw;
+  height: 100%;
   background-size: cover;
   z-index: -10;
 }

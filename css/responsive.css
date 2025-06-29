@@ -1,0 +1,100 @@
+@media (max-width: 1500px) {
+  #kaffee-hus iframe {
+    width: 754px;
+    height: 480px;
+  }
+
+  #kaffee-hus {
+    height: 750px;
+    width: 100vw;
+  }
+
+  .skill-images {
+    gap: 60px;
+    height: 160px;
+  }
+}
+
+@media (max-height: 1070px) {
+}
+
+@media (max-height: 800px) or (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    height: 110vh;
+  }
+
+  .header-text-block {
+    padding: 10px;
+    margin: 0 15px 0 15px;
+  }
+
+  .top-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #projekte {
+    height: 900px;
+  }
+
+  #kaffee-hus iframe {
+    width: 100vw;
+    height: 580px;
+    border-radius: 0;
+  }
+
+  #fähigkeiten {
+    text-align: center;
+  }
+
+  .skill-images {
+    margin-top: 110px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .skill-buttons {
+    display: none;
+  }
+
+  .textblock-right {
+    position: static;
+    /* right: 0; */
+    width: 380px;
+    height: auto;
+    text-align: center;
+  }
+
+  .textblock-left {
+    position: static;
+    /* left: 0; */
+    width: 380px;
+    height: auto;
+    text-align: center;
+  }
+
+  .textblocks {
+    margin-bottom: 100px;
+    flex-direction: column;
+  }
+
+  .signature {
+    position: relative;
+    bottom: 20px;
+  }
+
+  #impressum {
+    height: 500px;
+  }
+}
+
+@media (max-height: 550px) {
+  .header {
+    height: 140vh;
+  }
+}

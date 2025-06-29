@@ -13,15 +13,3 @@
   height: 580px;
   border-radius: 20px;
 }
-
-@media (max-width: 1500px) {
-  #kaffee-hus iframe {
-    width: 754px;
-    height: 480px;
-  }
-
-  #kaffee-hus {
-    height: 750px;
-    width: 100vw;
-  }
-}
