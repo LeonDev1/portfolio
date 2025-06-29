@@ -4,10 +4,16 @@
   justify-content: center;
   height: 80vh;
   width: 100vw;
-  background-image: url(../img/header-mountains.jpg);
   background-size: cover;
   color: #ffffff6c;
   position: relative;
+}
+
+.bg-image {
+  position: absolute;
+  width: 100vw;
+  height: 80vw;
+  background-size: cover;
 }
 
 .header-text-block {
