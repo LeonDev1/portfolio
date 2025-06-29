@@ -11,11 +11,28 @@
 
 .textblock-right {
   position: absolute;
-  /* right: 0; */
+  right: 0;
+  width: 380px;
+  text-align: center;
+}
+
+.textblock-left {
+  position: absolute;
+  left: 0;
   width: 380px;
   text-align: center;
 }
 
 .textblocks {
   display: flex;
+}
+
+.signature {
+  font-size: 15px;
+  position: absolute;
+  bottom: 15px;
+}
+
+.signature a {
+  color: white;
 }

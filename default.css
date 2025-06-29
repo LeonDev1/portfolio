@@ -9,13 +9,13 @@
 }
 
 * {
-  outline: red 2px solid;
   padding: 0;
   margin: 0;
 }
 
 body {
   font-family: "MerriweatherSans";
+  overflow-x: hidden;
 }
 
 .low-shadow {
@@ -40,4 +40,8 @@ p {
   bottom: 0;
   width: 100%;
   left: 0;
+}
+
+section {
+  position: relative;
 }
