@@ -1,11 +1,11 @@
 @font-face {
   font-family: "MerriweatherSans";
-  src: url(font/MerriweatherSans-ExtraBold.ttf);
+  src: url(../font/MerriweatherSans-ExtraBold.ttf);
 }
 
 @font-face {
   font-family: "MerriweatherSansBold";
-  src: url(font/MerriweatherSans-Bold.ttf);
+  src: url(../font/MerriweatherSans-Bold.ttf);
 }
 
 * {
