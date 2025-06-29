@@ -1,0 +1,62 @@
+#fähigkeiten {
+  height: 800px;
+  width: 100vw;
+  background-color: #1f1f1f;
+  color: white;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+#fähigkeiten h1 {
+  margin: 50px;
+}
+
+.skill-images {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+.skill-images img {
+  height: 180px;
+}
+
+.skill-buttons {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+
+.skill-buttons button {
+  width: 100px;
+  height: 30px;
+}
+
+.example-button {
+  border: none;
+  border-radius: 15px;
+  color: white;
+  background-color: rgb(0, 98, 255);
+  text-transform: uppercase;
+  font-family: "MerriweatherSans";
+  letter-spacing: 1px;
+  transition: scale 0.2s ease-out;
+}
+
+.example-button:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+
+@media (max-width: 1500px) {
+  .skill-images {
+    gap: 60px;
+    height: 160px;
+  }
+}

@@ -1,11 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/default.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/projects.css" />
+    <link rel="stylesheet" href="/css/coffee-hus.css" />
+    <link rel="stylesheet" href="/css/skills.css" />
+    <link rel="stylesheet" href="/css/impressum.css" />
     <title>Portfolio --- Leon</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-text-block">
+        <h1>Hi, Ich bin Leon!</h1>
+        <p>
+          Ich bin Schüler und würde mir zu <br />meinem Taschengeld gerne etwas
+          dazu verdienen.<br />Programmieren macht mir Spaß und ich möchte
+          <br />mich auch noch verbessern :)
+        </p>
+        <a href="index.html#projekte">
+          <button>Projekte</button>
+        </a>
+      </div>
+      <img src="/img/wave1.svg" alt="" class="wave" />
+    </header>
+    <!-- Projects -->
+    <section id="projekte">
+      <div class="top-projects">
+        <div class="project">
+          <h2>Friseur</h2>
+          <p>
+            Kleiner Friseurladen im Zentrum von Berlin. Hier bekommt jeder seine
+            Traumfrisur!
+          </p>
+          <button>Besuchen</button>
+        </div>
+        <div class="project">
+          <h2>Waschsalon</h2>
+          <p>24 Stunden. 7 Tage in der Woche. 365 Tage im Jahr.</p>
+          <button style="margin-top: 40px">Besuchen</button>
+        </div>
+      </div>
+
+      <div class="project">
+        <h2>Tierarzt</h2>
+        <p>
+          Egal ob für Kontrolle, Notfälle oder Verletzungen, wir sind für sie
+          da.
+        </p>
+        <button>Besuchen</button>
+      </div>
+
+      <img src="/img/wave2..svg" alt="" class="wave" />
+    </section>
+    <!-- Coffee Hus -->
+    <section id="kaffee-hus">
+      <iframe
+        src="https://getwaves.io/"
+        frameborder="0"
+        class="low-shadow"
+      ></iframe>
+      <img src="/img/wave3.svg" alt="" class="wave" />
+    </section>
+    <section id="fähigkeiten">
+      <h1>Meine Fähigkeiten</h1>
+      <div class="skill-images">
+        <img src="/img/HTML.png" alt="HTML" />
+        <img src="img/CSS.png" alt="CSS" />
+        <img src="img/JS.png" alt="Javascript" />
+      </div>
+      <div class="skill-buttons">
+        <button>Button</button>
+        <button class="example-button">Button</button>
+        <button class="example-button" onclick="confetti()">Button</button>
+      </div>
+      <img src="/img/wave4.svg" alt="" class="wave" />
+    </section>
+    <!-- Impressum -->
+    <section id="impressum">
+      <h2>Impressum</h2>
+      <div class="textblocks">
+        <div class="textblock-right">
+          <h2 style="text-decoration: underline">Kontakt</h2>
+          <p><br />Sie können mich über diese Email erreichen</p>
+          <p><br />leon.friesicke@gmail.com</p>
+        </div>
+        <div class="textblock-left">
+          <h2>Hallo</h2>
+          <p>Hallo</p>
+          <p>Hallo</p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+  <script src="/script.js"></script>
 </html>

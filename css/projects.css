@@ -1,0 +1,47 @@
+#projekte {
+  padding-top: 70px;
+  height: 700px;
+  width: 100vw;
+  background-color: #383838;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 30px;
+}
+
+.project {
+  position: relative;
+  font-family: "MerriweatherSansBold";
+  height: auto;
+  width: 280px;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px 20px 10px 20px;
+}
+
+.project button {
+  height: 45px;
+  width: 150px;
+  font-size: 20px;
+  margin-top: 10px;
+  border-radius: 13px;
+  border: none;
+  background-color: #262626;
+  color: #f9f9f9;
+  text-transform: uppercase;
+  font-family: "MerriweatherSans";
+  z-index: 2;
+  transition: transform 0.2s ease-out;
+}
+
+.project button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.top-projects {
+  display: flex;
+  gap: 30px;
+}

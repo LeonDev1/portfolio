@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100vw;
+  background-image: url(/img/header-mountains.jpg);
+  background-size: cover;
+  color: #ffffff6c;
+  position: relative;
+}
+
+.header-text-block {
+  height: auto;
+  width: auto;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+  /* blur */
+  background: rgba(59, 59, 59, 0.177);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+}
+
+.header-text-block h1 {
+  margin: 20px;
+}
+
+.header-text-block button {
+  height: 45px;
+  width: 150px;
+  font-size: 20px;
+  margin: 30px;
+  border-radius: 13px;
+  border: none;
+  background-color: #b4b6b8;
+  color: #45454570;
+  text-transform: uppercase;
+  font-family: "MerriweatherSans";
+  transition: transform 0.2s ease-out;
+}
+
+.header-text-block button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
