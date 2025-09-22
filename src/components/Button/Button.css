@@ -1,0 +1,10 @@
+.default-button {
+  padding: 0.29rem 0.94rem 0.29rem 0.94rem;
+  border-radius: 100rem;
+  font-size: 1rem;
+  font-family: "MerriweatherSans";
+}
+
+.default-button:hover {
+  cursor: pointer;
+}

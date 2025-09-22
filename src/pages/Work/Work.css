@@ -1,0 +1,54 @@
+#work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.7rem;
+
+  width: 100%;
+  height: 100dvh;
+  margin-top: 10dvh;
+}
+
+.workcard {
+  display: flex;
+  justify-content: center;
+  gap: 0.58rem;
+
+  width: 35.41rem;
+  height: 21.82rem;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.workcard:hover {
+  cursor: pointer;
+}
+
+.workcard img {
+  width: 14.23rem;
+  /* height: 18.64rem; */
+  height: 100%;
+  object-fit: cover;
+  transition: all 300ms ease;
+}
+
+.workcard:first-child:hover img:first-child {
+  margin-top: 8.82rem;
+  object-position: top;
+}
+
+.workcard:last-child:hover img:last-child {
+  margin-top: -8.82rem;
+  object-position: bottom;
+}
+
+.workcard:first-child img:first-child {
+  margin-top: 2.94rem;
+  object-position: top;
+  opacity: 0.5;
+}
+
+.workcard:last-child img:last-child {
+  margin-top: -2.94rem;
+  object-position: bottom;
+}
