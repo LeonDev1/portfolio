@@ -1,8 +1,8 @@
 import { motion, scale } from "framer-motion";
 
 import "./Work.css";
-import powerpeakImg from "../../assets/img/powerpeak.png";
-import gardenartImg from "../../assets/img/gardenart.png";
+import powerpeakImg from "../../assets/img/powerpeak.webp";
+import gardenartImg from "../../assets/img/gardenart.webp";
 import { a } from "motion/react-client";
 
 function Work() {

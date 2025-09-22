@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import "./Hero.css";
-import profileImg from "../../assets/img/profilepicture.png";
+import profileImg from "../../assets/img/profilepicture.webp";
 import Button from "../../components/Button/Button.jsx";
 
 function Hero() {
