@@ -4,6 +4,7 @@
   font-weight: 400;
   font-size: 17px;
   scroll-behavior: smooth;
+  scroll-padding-top: 10dvh;
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

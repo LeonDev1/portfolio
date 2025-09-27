@@ -1,29 +1,33 @@
-import { motion, scale } from "framer-motion";
+import { motion } from "framer-motion";
+
+import Heading from "../../components/Heading/Heading.jsx";
 
 import "./Work.css";
 import powerpeakImg from "../../assets/img/powerpeak.webp";
 import gardenartImg from "../../assets/img/gardenart.webp";
-import { a } from "motion/react-client";
 
 function Work() {
   return (
-    <section id="work">
-      <Workcard
-        bgColor={"#A886E4"}
-        imgSrc={powerpeakImg}
-        link="https://leondev1.github.io/powerpeak-fitness/"
-      />
-      <Workcard
-        bgColor={"#B8CF82"}
-        imgSrc={gardenartImg}
-        link="https://leondev1.github.io/garten-art/"
-      />
-      <Workcard
-        bgColor={"#6D9ED3"}
-        imgSrc={powerpeakImg}
-        link="https://leondev1.github.io/powerpeak-fitness/"
-      />
-    </section>
+    <>
+      <Heading content={"Projekte"}></Heading>
+      <section id="work">
+        <Workcard
+          bgColor={"#A886E4"}
+          imgSrc={powerpeakImg}
+          link="https://leondev1.github.io/powerpeak-fitness/"
+        />
+        <Workcard
+          bgColor={"#B8CF82"}
+          imgSrc={gardenartImg}
+          link="https://leondev1.github.io/garten-art/"
+        />
+        <Workcard
+          bgColor={"#6D9ED3"}
+          imgSrc={powerpeakImg}
+          link="https://leondev1.github.io/powerpeak-fitness/"
+        />
+      </section>
+    </>
   );
 }
 

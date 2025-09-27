@@ -4,10 +4,10 @@ import { ReactLenis, useLenis } from "lenis/react";
 import Hero from "./pages/Hero/Hero.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Work from "./pages/Work/Work.jsx";
+import AboutMe from "./pages/AboutMe/AboutMe.jsx";
 
 function App() {
   const lenis = useLenis((lenis) => {
-    // called every scroll
     console.log(lenis);
   });
 
@@ -19,6 +19,7 @@ function App() {
       <Navbar></Navbar>
       <Hero></Hero>
       <Work></Work>
+      <AboutMe></AboutMe>
     </div>
   );
 }

@@ -1,0 +1,6 @@
+.default-heading {
+  color: var(--transparent);
+  position: absolute;
+  left: 10vw;
+  right: 2.94rem;
+}

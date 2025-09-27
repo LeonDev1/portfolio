@@ -28,9 +28,7 @@ function Button({ content, bgColor, outline, href }) {
         className="default-button"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-      >
-        {content}
-      </motion.button>
+      >{content}</motion.button>
     </a>
   );
 }
