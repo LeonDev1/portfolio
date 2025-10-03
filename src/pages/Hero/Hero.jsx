@@ -13,14 +13,14 @@ function Hero() {
           {" "}
         </Button>
       </div>
-      <motion.div
-        className="header-image-container full-shadow"
+      <motion.img
+        src={profileImg}
+        className="header-image full-shadow"
+        alt="profile-image"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.98 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}
-      >
-        <motion.img src={profileImg} alt="profile-image" />
-      </motion.div>
+      />
     </section>
   );
 }

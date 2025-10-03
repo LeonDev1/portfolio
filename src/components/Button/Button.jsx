@@ -7,6 +7,7 @@ function Button({ content, bgColor, outline, href }) {
   if (outline) {
     style.backgroundColor = "var(--background)";
     style.border = "1px solid var(--text-color)";
+    style.color = "var(--text-color)";
   } else if (bgColor === "black") {
     style.backgroundColor = "var(--text-color)";
     style.color = "var(--background)";
@@ -28,7 +29,9 @@ function Button({ content, bgColor, outline, href }) {
         className="default-button"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-      >{content}</motion.button>
+      >
+        {content}
+      </motion.button>
     </a>
   );
 }
