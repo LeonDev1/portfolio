@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ReactLenis, useLenis } from "lenis/react";
+import ClickSpark from "./ClickSpark";
 
 import Hero from "./pages/Hero/Hero.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
@@ -12,17 +13,17 @@ function App() {
     console.log(lenis);
   });
 
-  const [count, setCount] = useState(0);
-
   return (
-    <div>
-      <ReactLenis root />
-      <Navbar></Navbar>
-      <Hero></Hero>
-      <Work></Work>
-      <AboutMe></AboutMe>
-      <Contact></Contact>
-    </div>
+    <ClickSpark sparkSize={10} sparkRadius={15} sparkCount={8} duration={400}>
+      <div>
+        <ReactLenis root />
+        <Navbar></Navbar>
+        <Hero></Hero>
+        <Work></Work>
+        <AboutMe></AboutMe>
+        <Contact></Contact>
+      </div>
+    </ClickSpark>
   );
 }
 

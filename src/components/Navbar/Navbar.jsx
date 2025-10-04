@@ -41,9 +41,6 @@ function Navbar() {
         <a href="#work">
           <p>Projekte</p>
         </a>
-        {/* <a href="#features">
-          <p>Features</p>
-        </a> */}
         <a href="#about-me">
           <p>About Me</p>
         </a>

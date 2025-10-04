@@ -1,7 +1,7 @@
 import "./Button.css";
 import { motion } from "framer-motion";
 
-function Button({ content, bgColor, outline, href }) {
+function Button({ content, bgColor, outline, href, submit }) {
   let style = {};
 
   if (outline) {
