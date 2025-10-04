@@ -9,9 +9,11 @@ function Hero() {
       <div className="header-container">
         <h1>Hi, Ich bin Leon!</h1>
         <h2>Webdeveloper・Webdesigner</h2>
-        <Button content={"Meine Projekte"} bgColor={"blue"} href={"#work"}>
-          {" "}
-        </Button>
+        <Button
+          content={"Meine Projekte"}
+          bgColor={"blue"}
+          href={"#work"}
+        ></Button>
       </div>
       <motion.img
         src={profileImg}

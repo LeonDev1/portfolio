@@ -1,10 +1,13 @@
 import React, { useState } from "react";
-import { motion, scale } from "framer-motion";
+import { motion } from "framer-motion";
 
 import "./Contact.css";
 import Heading from "../../components/Heading/Heading.jsx";
 
+import FooterImg from "../../assets/img/profilepicture.webp";
+
 function Contact() {
+  const currentDate = new Date().getFullYear();
   const [result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {
@@ -22,7 +25,7 @@ function Contact() {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Form Submitted Successfully");
+      setResult("Gesendet 👍");
       event.target.reset();
     } else {
       console.log("Error", data);
@@ -72,6 +75,15 @@ function Contact() {
           </span>
         </form>
       </section>
+      <div id="footer">
+        <motion.img
+          src={FooterImg}
+          whileHover={{ scale: 1.08 }}
+          whileTap={{ scale: 0.93 }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+        />
+        <h3 id="copyright">Copyright © {currentDate} Leondev</h3>
+      </div>
     </>
   );
 }

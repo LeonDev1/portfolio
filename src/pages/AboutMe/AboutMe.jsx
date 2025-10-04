@@ -23,7 +23,11 @@ function AboutMe() {
             Hi, ich bin Leon, 13 Jahre alt und Webdeveloper. Ich baue gern
             Webseiten und lerne dabei immer mehr über Programmieren und Design.
           </p>
-          <Button bgColor={"black"} content={"Kontaktiere mich"}></Button>
+          <Button
+            bgColor={"black"}
+            content={"Kontaktiere mich"}
+            href={"#contact"}
+          ></Button>
         </div>
       </section>
     </>
