@@ -77,6 +77,7 @@ function Contact() {
       </section>
       <div id="footer">
         <motion.img
+          className="full-shadow"
           src={FooterImg}
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.93 }}

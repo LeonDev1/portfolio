@@ -17,6 +17,9 @@ function Hero() {
       </div>
       <motion.img
         src={profileImg}
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        viewport={{ once: true }}
         className="header-image full-shadow"
         alt="profile-image"
         whileHover={{ scale: 1.05 }}

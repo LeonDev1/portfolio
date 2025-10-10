@@ -40,6 +40,9 @@ function Workcard({ bgColor, imgSrc, link = "https://google.com" }) {
     <a href={link}>
       {" "}
       <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         className="workcard full-shadow"

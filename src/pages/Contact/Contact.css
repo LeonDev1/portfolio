@@ -17,7 +17,6 @@
 .field {
   width: 100%;
   resize: none;
-  /* outline: none; */
   border: 1px solid var(--text-color);
   border-radius: 100rem;
   padding: 0.76rem 1.17rem 0.76rem 1.17rem;
@@ -36,7 +35,7 @@
 }
 
 #contact-textarea {
-  height: 20dvh;
+  height: 30dvh;
   border-radius: 1.17rem;
 }
 
