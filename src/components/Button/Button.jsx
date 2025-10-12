@@ -1,13 +1,17 @@
 import "./Button.css";
 import { motion } from "framer-motion";
 
-function Button({ content, bgColor, outline, href, submit }) {
+function Button({ content, bgColor, outline, reverse, href, submit }) {
   let style = {};
 
   if (outline) {
     style.backgroundColor = "var(--background)";
     style.border = "1px solid var(--text-color)";
     style.color = "var(--text-color)";
+  } else if (reverse) {
+    style.backgroundColor = "var(--background)";
+    style.color = "var(--text-color)";
+    style.border = "none";
   } else if (bgColor === "black") {
     style.backgroundColor = "var(--text-color)";
     style.color = "var(--background)";

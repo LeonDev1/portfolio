@@ -13,12 +13,14 @@
   --text-color: #0c131a;
   --background: #f7f9fc;
   --transparent: hsl(from var(--text-color) h s l / 0.5);
+  --transparent-reverse: hsl(from var(--background) h s l / 0.5);
 }
 
 .darkmode {
   --text-color: #f7f9fc;
   --background: #222222;
   --transparent: hsl(from var(--text-color) h s l / 0.5);
+  --transparent-reverse: hsl(from var(--background) h s l / 0.5);
 }
 
 @font-face {

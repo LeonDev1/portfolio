@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   width: 100%;
   height: auto;
   min-height: 70dvh;
@@ -16,16 +15,35 @@
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  width: 30%;
-  height: 100%;
+
+  position: relative;
+  /* width: 65%; */
+  width: 40.52rem;
+  height: 25.88rem;
+  border-radius: 1.47rem;
+  background: var(--text-color);
 }
 
 .about-img {
-  height: 7.64rem;
-  width: 7.64rem;
+  position: absolute;
+  top: calc(-12.58rem / 2);
+  height: 12.58rem;
+  width: 12.58rem;
   border-radius: 100rem;
 }
 
 .about-text {
   text-align: center;
+  color: var(--transparent-reverse);
+  padding: 0 4.17rem;
+  margin-top: 12px;
+}
+
+.about-text span {
+  color: var(--background);
+}
+
+.about-button {
+  position: absolute;
+  bottom: 4.64rem;
 }

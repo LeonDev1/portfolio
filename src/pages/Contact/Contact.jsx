@@ -35,7 +35,6 @@ function Contact() {
 
   return (
     <>
-      <Heading content={"Contact"}></Heading>{" "}
       <section id="contact">
         <form onSubmit={onSubmit} className="inputs">
           <div className="inputs">
