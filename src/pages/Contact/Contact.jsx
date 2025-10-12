@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import "./Contact.css";
 import Heading from "../../components/Heading/Heading.jsx";
@@ -25,13 +26,15 @@ function Contact() {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Gesendet 👍");
+      setResult("send");
       event.target.reset();
     } else {
       console.log("Error", data);
       setResult(data.message);
     }
   };
+
+  const { t, i18n } = useTranslation();
 
   return (
     <>
@@ -41,21 +44,21 @@ function Contact() {
             <input
               type="text"
               className="field"
-              placeholder="Name"
+              placeholder={t("contact-name")}
               name="name"
               required
             />
             <input
               type="email"
               className="field"
-              placeholder="Email"
+              placeholder={t("contact-email")}
               name="email"
               required
             />
             <textarea
               id="contact-textarea"
               className="field message"
-              placeholder="Inhalt"
+              placeholder={t("contact-message")}
               name="message"
               required
             ></textarea>
@@ -66,7 +69,7 @@ function Contact() {
               whileTap={{ scale: 1 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              Submit
+              {t("contact-button")}
             </motion.button>
           </div>
           <span>

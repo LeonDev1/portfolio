@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+
 import "./AboutMe.css";
 import Button from "../../components/Button/Button.jsx";
-import Heading from "../../components/Heading/Heading.jsx";
-
 import profileImg from "../../assets/img/profilepicture.webp";
 
 function AboutMe() {
+  const { t, i18n } = useTranslation();
+
   return (
     <section id="about-me">
       <div className="about-wrapper">
@@ -20,16 +22,11 @@ function AboutMe() {
           whileTap={{ scale: 0.98 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
         />
-        <h2 className="about-text">
-          Hi, ich bin <span>Leon</span>,
-          <br /> 13 Jahre alt und <span>Webdeveloper</span>.<br /> Ich baue gern
-          Webseites und lerne dabei immer mehr über <span>Programmieren</span>
-          und <span>Design</span>.
-        </h2>
+        <h2 className="about-text">{t("about-me-text")}</h2>
         <div className="about-button">
           <Button
             bgColor={"black"}
-            content={"Kontaktiere mich"}
+            content={t("about-me-button")}
             href={"#contact"}
             reverse
           />

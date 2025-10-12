@@ -1,16 +1,20 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+
 import "./Hero.css";
 import profileImg from "../../assets/img/profilepicture.webp";
 import Button from "../../components/Button/Button.jsx";
 
 function Hero() {
+  const { t, i18n } = useTranslation();
+
   return (
     <section id="home">
       <div className="header-container">
-        <h1>Hi, Ich bin Leon!</h1>
+        <h1>{t("header-text")}</h1>
         <h2>Webdeveloper・Webdesigner</h2>
         <Button
-          content={"Meine Projekte"}
+          content={t("header-button")}
           bgColor={"blue"}
           href={"#work"}
         ></Button>

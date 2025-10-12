@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
 import { ReactLenis, useLenis } from "lenis/react";
 import ClickSpark from "./ClickSpark";
+import "./i18n";
+import { useTranslation } from "react-i18next";
 
 import Heading from "./components/Heading/Heading.jsx";
 
@@ -15,17 +16,19 @@ function App() {
     console.log(lenis);
   });
 
+  const { t } = useTranslation();
+
   return (
     <ClickSpark sparkSize={10} sparkRadius={15} sparkCount={8} duration={400}>
       <div id="root-div">
         <ReactLenis root />
         <Navbar></Navbar>
         <Hero></Hero>
-        <Heading content={"Projekte"}></Heading>
+        <Heading content={t("work")}></Heading>
         <Work></Work>
         <Heading content={"About Me"}></Heading>
         <AboutMe></AboutMe>
-        <Heading content={"Contact"}></Heading>
+        <Heading content={t("contact")}></Heading>
         <Contact></Contact>
       </div>
     </ClickSpark>

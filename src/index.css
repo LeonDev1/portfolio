@@ -87,3 +87,9 @@ a {
     0px 0px 67px hsl(from var(--text-color) h s l / 0.08),
     0px 0px 104px hsl(from var(--text-color) h s l / 0.1);
 }
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 13px;
+  }
+}

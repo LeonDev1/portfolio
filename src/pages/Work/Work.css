@@ -45,10 +45,33 @@
 .workcard:first-child img:first-child {
   margin-top: 2.94rem;
   object-position: top;
-  opacity: 0.5;
 }
 
 .workcard:last-child img:last-child {
   margin-top: -2.94rem;
   object-position: bottom;
+}
+
+@media (max-width: 768px) {
+  #work {
+    /* width: 100vw; */
+    justify-content: center;
+  }
+
+  .workcard {
+    width: 90vw;
+    height: calc(90vw - 10rem);
+  }
+
+  .workcard img {
+    width: 42%;
+  }
+
+  .workcard:first-child:hover img:first-child {
+    margin-top: 4.82rem;
+  }
+
+  .workcard:last-child:hover img:last-child {
+    margin-top: -4.82rem;
+  }
 }

@@ -17,7 +17,6 @@
   gap: 1.5rem;
 
   position: relative;
-  /* width: 65%; */
   width: 40.52rem;
   height: 25.88rem;
   border-radius: 1.47rem;
@@ -34,16 +33,29 @@
 
 .about-text {
   text-align: center;
-  color: var(--transparent-reverse);
-  padding: 0 4.17rem;
-  margin-top: 12px;
-}
-
-.about-text span {
   color: var(--background);
+  padding: 0 4.9rem;
+  margin-top: 0.7rem;
 }
 
 .about-button {
   position: absolute;
   bottom: 4.64rem;
+}
+
+@media (max-width: 768px) {
+  .about-wrapper {
+    width: 95vw;
+    height: 20.88rem;
+  }
+
+  .about-text {
+    padding: 0 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .about-button {
+    position: absolute;
+    bottom: 15%;
+  }
 }

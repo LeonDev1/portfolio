@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 
-import Heading from "../../components/Heading/Heading.jsx";
-
 import "./Work.css";
 import powerpeakImg from "../../assets/img/powerpeak.webp";
 import gardenartImg from "../../assets/img/gardenart.webp";
