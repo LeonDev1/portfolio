@@ -9,6 +9,6 @@ Welcome to my personal portfolio!
 - Javascript
 - React
 
-## Get In Touch
+## ⭐Get In Touch
 
 https://leondev1.github.io/portfolio/
